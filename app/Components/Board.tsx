@@ -8,7 +8,7 @@ function Board({ setScore, addScore }: {
   setScore: number,
   addScore: number
 }) {
-  const [cells, setCells] = useState([
+  const [cells, setCells] = useState([    
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   ]);
 
@@ -97,7 +97,7 @@ function Board({ setScore, addScore }: {
           const newValue = isNaN(filteredArray[k])
             ? 0
             : Number(filteredArray[k]);
-          // setScore(prevScore => isNaN(prevScore) ? newValue : prevScore + newValue);
+         
           setScore((prevScore: number) => {
             if (isNaN(prevScore)) {
               return newValue;

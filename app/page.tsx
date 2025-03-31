@@ -11,7 +11,7 @@ import Winning from "./context/Winning";
 export default function Home() {
 
   const [gameOver , setGameOver] = useState(true);
-  const [score , setScore] = useState(0);
+  const [score , setScore] = useState<number>(0);
   const [points , setPoints] = useState([]);
   const [win , setWin] = useState(null);
 
